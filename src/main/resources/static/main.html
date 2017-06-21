@@ -1,0 +1,12 @@
+
+
+<div ng-controller="userListController"> 
+
+<ul>
+	<li ng-repeat="user in users">
+		<a href="#!usercarddetail" ng-click="clickUser(user.username)">{{ user.username }}</a>
+	</li>
+</ul>
+
+</div>
+

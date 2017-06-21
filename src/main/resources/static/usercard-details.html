@@ -1,0 +1,56 @@
+
+
+<div data-ng-controller="userCardDetail">
+ 
+<p>User name is - {{ usercarddetail.username }}</p>
+
+<div class="row content">
+<div class="col-sm-6">
+<table class="table table-hover">
+    <thead>
+      <tr>
+    <th>Card No</th>
+    <th>Card Type</th>
+    <th>Expiration</th>
+    <th>Security Code</th>
+  </tr>	
+    </thead>
+    <tbody>
+      <tr ng-repeat="card in usercarddetail.cards">
+    <td>{{ card.cardNo }}</td>
+    <td>{{ card.cardType }}</td>
+    <td>{{ card.expiration }}</td>
+    <td>{{ card.securityCode }}</td>
+  </tr>
+    </tbody>
+  </table>
+</div>
+<div class="col-sm-6">
+<table class="table table-hover">
+    <thead>
+      <tr>
+    <th>Card No</th>
+    <th>Card Type</th>
+    <th>Expiration</th>
+    <th>Security Code</th>
+  </tr>	
+    </thead>
+    <tbody>
+      <tr ng-repeat="card in usercarddetail.cards">
+    <td>{{ card.cardNo }}</td>
+    <td>{{ card.cardType }}</td>
+    <td>{{ card.expiration }}</td>
+    <td>{{ card.securityCode }}</td>
+  </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<a href="#!back">Back</a>
+
+
+</div>
+
+
+
